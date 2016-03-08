@@ -683,6 +683,10 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * $settings['trusted_host_patterns'] = array(
  *   '^www\.example\.com$',
  * );
+
+ $settings['trusted_host_patterns'] = array(
+'^localhost$',
+);
  * @endcode
  * will allow the site to only run from www.example.com.
  *
@@ -717,6 +721,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
+
 $databases['default']['default'] = array (
   'database' => 'goddess',
   'username' => 'admin',
